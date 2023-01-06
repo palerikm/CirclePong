@@ -11,10 +11,10 @@ class Paddle: SKShapeNode {
     
         
         paddlePath = CGMutablePath()
-        let delta = 1/3*CGFloat.pi
+        let delta = 1/4*CGFloat.pi
         let startAngle = (CGFloat.pi * 3 / 2 ) - (delta/2)
-        paddlePath.addRelativeArc(center: CGPoint.zero, radius: centerPoint.x-12, startAngle: startAngle, delta: delta)
-        
+        paddlePath.addRelativeArc(center: CGPoint(), radius: centerPoint.x-12, startAngle: startAngle, delta: delta)
+      
         path = paddlePath
         
         

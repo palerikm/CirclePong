@@ -4,6 +4,8 @@ import SpriteKit
 
 class Ball: SKShapeNode {
     
+    var smashForce:CGFloat = 60
+    
     override init() {
         super.init()
         let ballPath = CGMutablePath()
@@ -25,7 +27,7 @@ class Ball: SKShapeNode {
         physicsBody?.contactTestBitMask = PhysicsCategory.paddle // 4
         physicsBody?.collisionBitMask = PhysicsCategory.none // 5
         
-        
+     
         
     }
     
