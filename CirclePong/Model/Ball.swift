@@ -25,7 +25,7 @@ class Ball: SKShapeNode {
         physicsBody?.isDynamic = true // 2
         physicsBody?.categoryBitMask = PhysicsCategory.ball // 3
         physicsBody?.contactTestBitMask = PhysicsCategory.paddle // 4
-        physicsBody?.collisionBitMask = PhysicsCategory.none // 5
+        physicsBody?.collisionBitMask = PhysicsCategory.ball // 5
         
      
         
